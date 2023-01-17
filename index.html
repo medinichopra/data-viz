@@ -9,6 +9,7 @@
     />
     <script src="https://d3js.org/d3.v7.min.js" defer></script>
     <script src="https://d3js.org/d3-scale.v3.min.js" defer></script>
+    <script src="https://d3js.org/d3-axis.v1.min.js" defer></script>
     <script src="app.js" defer></script>
   </head>
   <body>
@@ -26,13 +27,17 @@
         <h1>VISUALISE YOUR DATA</h1>
         <p>Bar charts are used to compare data among different groups. They are useful for showing changes over time or for comparing items.</p>
         <div>
-          <button type="button" class="btn"><span></span>Bar Chart</button>
-          <button type="button" class="btn"><span></span>Line Chart</button>
+          <button type="button" class="btn"><span class="button-span"></span>Bar Chart</button>
+          <button type="button" class="btn"><span class="button-span"></span>Line Chart</button>
         </div>
-        <svg class="chart">
-          <!-- <h1>Bar Chart</h1>
-          <svg width="600" height="400"></svg> -->
-          </svg>
+      </div>
+    </div>
+    <div id="app">  
+      <div id="chart">
+        <svg></svg> <!-- will be picked up for chart -->
+      </div>
+      <div id="data">
+        <ul></ul>
       </div>
     </div>
   </body>

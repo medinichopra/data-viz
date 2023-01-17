@@ -15,9 +15,6 @@
     height: 200px;
     border: 1px solid #18aa92;
 }
-.bar {
-    fill: #18aa92
-}
 .navbar {
     width: 85%;
     margin: auto;
@@ -95,7 +92,7 @@ button {
     overflow: hidden;
 }
 
-span {
+.button-span {
     background: #009688;
     height: 100%;
     width: 0;
@@ -112,3 +109,47 @@ button:hover span{
 button:hover {
     border: none;
 }
+
+  #app {
+    display: flex;
+    /* margin: 2rem 1rem; */
+    position: relative;
+    overflow: hidden;
+    background: linear-gradient(to right, #3e6653, #84313a);
+  }
+
+  #chart {
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.26);
+    padding: 1rem;
+  }
+
+  #chart,
+  #data {
+    margin: 0 2rem;
+    margin: 0 auto
+  }
+
+  #data ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+
+  #data li {
+    margin-bottom: 1rem;
+    padding: 1rem;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.26);
+    width: 10rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-weight: bold;
+  }
+
+  .bar {
+    fill: #18aa92
+}
+
+  .label {
+    fill: #360909;
+  }
