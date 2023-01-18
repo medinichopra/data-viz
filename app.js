@@ -88,12 +88,12 @@ listItems.append('span')
     .text((data) => data.region)
     ;
 
-let unselectedIds = [];
+let unselectedIds = []; //there's a problem with this
 
 listItems.append('input')
     .attr('type', 'checkbox')
     .attr('checked', true)
-    .on('change', function() {
+    .on("change", (data) => {
         console.log(data);
         if (unselectedIds.indexOf(data.id) === -1){
             unselectedIds.push(data.id);
